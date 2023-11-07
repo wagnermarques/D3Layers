@@ -9,16 +9,16 @@ após o clone, e um npm install na pasta do projeto, é possível dar os
 comandos:
 
 
-* "build": "vite build",
+*** "build": "vite build",
    builda (transpila) o código typescript para módumo es6 na pasta dist
 
-* "buildselen" : "npm run build && cp -rf ./dist main/src/tests-selenium/",
+*** "buildselen" : "npm run build && cp -rf ./dist main/src/tests-selenium/",
    builda e copia no diretorio onde o selenium e executado.
 
-* "build4selen" : "npm run build && cp -rf ./dist main/src/tests-selenium/ && echo $(pwd) && php -S localhost:9999 -t ./main/src/tests-selenium/",
+*** "build4selen" : "npm run build && cp -rf ./dist main/src/tests-selenium/ && echo $(pwd) && php -S localhost:9999 -t ./main/src/tests-selenium/",
    builda  sobe um servidor pra que o selenium possa rodar os testes
 
-* "testselen" : "ts-node --esm ./main/src/tests-selenium/selenium-barchart-test.ts"
+*** "testselen" : "ts-node --esm ./main/src/tests-selenium/selenium-barchart-test.ts"
    roda o selenium
 
     
