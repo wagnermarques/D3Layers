@@ -1,0 +1,24 @@
+#+Title: D3Layers
+
+Início de um projeto para criar uma camada orientada a objetos pra
+simplificar a utilização do [[https://d3js.org/][d3.js]] em contextos específicos de uso para
+alguns de nossos projetos.
+
+Por enquanto aqui só tem a estrutura do projeto criada de modo que,
+após o clone, e um npm install na pasta do projeto, é possível dar os
+comandos:
+
+
+* "build": "vite build",
+   builda (transpila) o código typescript para módumo es6 na pasta dist
+
+* "buildselen" : "npm run build && cp -rf ./dist main/src/tests-selenium/",
+   builda e copia no diretorio onde o selenium e executado.
+
+* "build4selen" : "npm run build && cp -rf ./dist main/src/tests-selenium/ && echo $(pwd) && php -S localhost:9999 -t ./main/src/tests-selenium/",
+   builda  sobe um servidor pra que o selenium possa rodar os testes
+
+* "testselen" : "ts-node --esm ./main/src/tests-selenium/selenium-barchart-test.ts"
+   roda o selenium
+
+    
