@@ -1,0 +1,18 @@
+#+Title: Charts com D3js
+
+
+
+* preparing the build
+  npm install vite ts-loader --save-dev
+
+* building
+
+  npm run build
+
+  or
+
+  vite build
+
+
+  
+  

@@ -1,0 +1,25 @@
+{
+  "name": "my-project",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "buildselen" : "npm run build && cp -rf ./dist main/src/tests-selenium/",
+    "build4selen" : "npm run build && cp -rf ./dist main/src/tests-selenium/ && echo $(pwd) && php -S localhost:9999 -t ./main/src/tests-selenium/",
+    "testselen" : "ts-node --esm ./main/src/tests-selenium/selenium-barchart-test.ts"
+  },
+  "dependencies": {
+    "d3": "^7.8.5",
+    "npm": "^10.2.3"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.2",
+    "@types/selenium-webdriver": "^4.1.19",
+    "chromedriver": "^119.0.0",
+    "selenium-webdriver": "^4.15.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  }
+}
